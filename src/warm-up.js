@@ -68,25 +68,27 @@ if (isFavorite = true) {
 
 // Create a new variable "vegetables" and assign it to an Array of 5 different
 // vegetables, represented by their names as Strings.
+var vegetables = ['okra', 'bokchoy', 'asparagus', 'arugula', 'spinach']
 
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
+vegetables[2]
 
 
 // Create a new variable "fruits" and assign it to an Array of 7
 // different fruits.
+var fruits = ['apple', 'banana', 'kiwi', 'dragonfruit', 'orange', 'pineapple', 'clementine']
 
 
 // Write the code to access the 5th element of the array, using bracket notation.
-
+fruits[4]
 
 //------------------------- Objects -------------------------//
 
 // Create a new variable called "groceryStore" and assign to it an object literal with two
 // keys: name, and isOpen. The value for name should the string 'King Soopers' (or your favorite grocery store), and
 // the value for isOpen should be true. Which other key value pairs would make sense to add to this object?
-
 
 
 // Write the code to add the key of location, with the value of 'Denver, Colorado'. Use dot
