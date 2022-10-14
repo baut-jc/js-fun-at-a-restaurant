@@ -2,17 +2,28 @@ function nameMenuItem(food) {
   return `Delicious ${food}`
 }
 
-function createMenuItem(menu) {
-  var menu = {}
-  console.log(menu) 
-  return
+function createMenuItem(name, price, type) {
+  var menu = {
+    name: name,
+    price: price,
+    type: type
+  }
+  return menu
 }
+
+function addIngredients(food, ingredients) {
+  if (!ingredients.includes(food)) {
+    return ingredients.push(food)
+  }
+}
+
+function ad
 
 
 module.exports = {
   nameMenuItem,
-  // createMenuItem,
-  // addIngredients,
+  createMenuItem,
+  addIngredients,
   // formatPrice,
   // decreasePrice,
   // createRecipe
