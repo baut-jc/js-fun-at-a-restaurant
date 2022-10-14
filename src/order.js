@@ -9,6 +9,12 @@ function takeOrder(order, deliveryOrders) {
   }
 }
 
+function refundOrder(ticket, deliveryOrders) {
+  for(var i = 0; i < deliveryOrders.length; i++)
+    if(deliveryOrders[i].orderNumber === ticket) {
+      return deliveryOrders.splice(i, 1)
+    }
+}
 
 module.exports = {
   takeOrder,
