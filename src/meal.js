@@ -21,13 +21,16 @@ function formatPrice(price) {
   return `$${price}`
 }
 
+// function decreasePrice() {
+//   return 
+// }
 
 module.exports = {
   nameMenuItem,
   createMenuItem,
   addIngredients,
   formatPrice,
-  // decreasePrice,
+  decreasePrice,
   // createRecipe
 }
 
