@@ -139,7 +139,7 @@ describe("restaurant.js", function() {
       assert.isFunction(removeMenuItem);
     });
 
-    it.skip("should remove an item from the menu to update it", function() {
+    it("should remove an item from the menu to update it", function() {
       var pizzaRestaurant = createRestaurant("Sexy Pizza");
       var bbqPizza = {
         name: "BBQ Chicken Pizza",
