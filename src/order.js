@@ -24,10 +24,19 @@ function listItems(orders) {
   return foods.join(', ')
 }
 
+function searchOrder(listVariable, itemString) {
+  var found = false
+  for(var i = 0; i < listVariable.length; i++) {
+    if(listVariable[i].item === itemString) {
+     found = true
+    }
+  }
+  return found
+}
 
 module.exports = {
   takeOrder,
   refundOrder,
   listItems,
-  // searchOrder
+  searchOrder
 }
