@@ -11,11 +11,6 @@ function createRestaurant(foodPlace) {
 }
 
 function addMenuItem(foodPlace, menuDish) {
-  console.log('expected to print food string: ', menuDish.name)
-  console.log('Andrew code ', foodPlace.menus.breakfast.includes('Bacon and Eggs Pizza'))
-  // console.log(foodPlace.menus.lunch)
-  // for(var i = 0; i < foodPlace.menus.breakfast.length; i++)
-  // console.log('test: ', foodPlace.menus.breakfast.includes(menuDish.name))
     if(menuDish.type === 'breakfast' && !foodPlace.menus.breakfast.includes(menuDish)) {
       foodPlace.menus.breakfast.push(menuDish)
       return foodPlace.menus.breakfast
@@ -28,8 +23,12 @@ function addMenuItem(foodPlace, menuDish) {
     }
 }
 
+function removeMenuItem() {
+  
+}
+
 module.exports = {
   createRestaurant, 
   addMenuItem,
-  // removeMenuItem
+  removeMenuItem
 }
