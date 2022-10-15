@@ -1,6 +1,6 @@
-function createRestaurant(restau) {
+function createRestaurant(foodPlace) {
   var restaurant = {
-    name: restau,
+    name: foodPlace,
     menus: {
       breakfast: [],
       lunch: [],
@@ -10,8 +10,18 @@ function createRestaurant(restau) {
   return restaurant
 }
 
+function addMenuItem(foodPlace, foodName) {
+  console.log(foodPlace.menus.lunch)
+  for(var i = 0; i < foodPlace.menus.lunch.length; i++)
+    if(foodPlace.menus.lunch.length <= foodPlace.menus.lunch[i])
+    foodPlace.menus.lunch.push(foodName)
+
+  console.log('length: ', foodPlace.menus.lunch.length)
+  console.log('foodName: ', foodPlace.menus.lunch[i])
+}
+
 module.exports = {
   createRestaurant, 
-  // addMenuItem,
+  addMenuItem,
   // removeMenuItem
 }
