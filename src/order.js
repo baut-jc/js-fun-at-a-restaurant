@@ -16,9 +16,18 @@ function refundOrder(ticket, deliveryOrders) {
     }
 }
 
+function listItems(orders) {
+  var foods = []
+  for(var i = 0; i < orders.length; i++){
+    foods.push(orders[i].item)
+  }
+  return foods.join(', ')
+}
+
+
 module.exports = {
   takeOrder,
   refundOrder,
-  // listItems,
+  listItems,
   // searchOrder
 }
