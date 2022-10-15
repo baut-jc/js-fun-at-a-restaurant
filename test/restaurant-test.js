@@ -89,7 +89,7 @@ describe("restaurant.js", function() {
       assert.deepEqual(pizzaRestaurant.menus.lunch, [bbqPizza, cheesePizza, hawaiianPizza]);
     });
 
-    it.skip("should add menu items to the correct menu automatically", function() {
+    it("should add menu items to the correct menu automatically", function() {
       var pizzaRestaurant = createRestaurant("Sexy Pizza");
       var bbqPizza = {
         name: "BBQ Chicken Pizza",
