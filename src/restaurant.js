@@ -25,16 +25,24 @@ function addMenuItem(foodPlace, menuDish) { //(object,  object: restaurant.menus
 
 function removeMenuItem(foodPlace, menuDishName, menuType) {
   // for (var i = 0; i < foodPlace.menus.length; i++)
-  console.log('objects: ', foodPlace.menus.menuDish) //objects in Array; access all in object
-  for (var i = 0; i < foodPlace.menus.breakfast.length; i++) {
-    foodPlace.menus.breakfast.splice(0, 1)
-    return `No one is eating our ${menuDishName} - it has been removed from the ${menuType} menu!`
+
+  console.log('objects: ', foodPlace.menus, foodPlace.menus[menuType])
+  console.log('string: ', menuDishName) //objects in Array; access all in object
+  for (var i = 0; i < foodPlace.menus[menuType].length; i++) {
+    if (foodPlace.menus[menuType][i].name === menuDishName) {
+        foodPlace.menus[menuType].splice(0, 1)
+        // console.log('remove from array: ', foodPlace.menus[menuType].splice(0, 1))
+      return `No one is eating our ${menuDishName} - it has been removed from the ${menuType} menu!`
+    }
   }
-  //if not an object in array; return Sorry, we don't sell ${}, try adding a new recipe!
+  return `Sorry, we don't sell ${menuDishName}, try adding a new recipe!`
+}
+
+  //if not an object in array; return Sorry, we don't sell ${menuDishName}, try adding a new recipe!
       //access the different menus array, dynamically to get to the array's object's foodName/menuDish
         //menuType === menuDish.type
       //declare variable/for loop?
-}
+
 
 module.exports = {
   createRestaurant, 
