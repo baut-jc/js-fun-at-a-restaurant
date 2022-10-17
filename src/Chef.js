@@ -13,6 +13,7 @@ class Chef {
   }
   checkForFood(menuDishName) {
     // for (var i = 0; i < menuDishName.menus.length; i++)
+    //menuDishName.name //prints [object Object]
      if (menuDishName.name === menuDishName) {
       return `Yes, we're serving ${menuDishName} today!`
      }
